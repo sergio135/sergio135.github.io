@@ -1,5 +1,4 @@
 
-javascript
 // Simula il salvataggio dell'utente con una quota iniziale di 30 fagioli
 let user = {
     id: 'user123', // Simula un ID unico per l'utente

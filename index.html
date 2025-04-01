@@ -1,0 +1,40 @@
+
+html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scommetti con i Fagioli</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Benvenuto nel gioco dei Fagioli</h1>
+        <p>Scansiona il QR Code per accedere e inizia a scommettere!</p>
+    </header>
+    
+    <section id="qr-section">
+        <h2>Il tuo QR Code:</h2>
+        <div id="qrcode"></div>
+        <button id="generate-qr">Genera QR Code</button>
+    </section>
+    
+    <section id="user-section">
+        <h2>Benvenuto, Utente!</h2>
+        <p>Saldo di fagioli: <span id="balance">30</span> fagioli</p>
+        
+        <label for="bet-amount">Scommetti:</label>
+        <input type="number" id="bet-amount" min="1" value="1">
+        <button id="bet-button">Scommetti!</button>
+
+        <h3>Storico Scommesse</h3>
+        <ul id="bet-history">
+            <li>No scommesse effettuate ancora.</li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
